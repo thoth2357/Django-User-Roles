@@ -1,0 +1,31 @@
+{% load static %}
+{% comment %} JUST SHOW OFF SHOULD HAVE JUST PUT THIS IN SIGNUP FORM .BUT I LOVE ABSTRACTING THINGS OUT {% endcomment %}
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content=" " />
+        <meta name="keywords" content="" />
+
+        <title> 
+            A Job Test - {% block title %}{% endblock title %}
+        </title>
+
+        {% block styles %}
+
+        {% endblock styles %}
+
+    </head>
+
+    <body>
+        {% block content %}
+        
+        {% endblock content %}    
+
+        {% block script %}
+
+        {% endblock script %}
+    </body>
+        
+</html>
