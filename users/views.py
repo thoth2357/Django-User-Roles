@@ -4,7 +4,7 @@ from django.shortcuts import render,redirect
 from django.http import HttpResponse
 from django.contrib.auth.decorators import user_passes_test
 from django.contrib.auth.forms import AuthenticationForm
-from django.contrib.auth import authenticate,login as user_login, logout
+from django.contrib.auth import authenticate,login as user_login, logout as user_logout
 
 from .models import Student, TeacherDetails, User, StudentDetails
 from .forms import SignupForm,TeacherCreateForm
@@ -80,5 +80,5 @@ def logout(request):
     '''
     Logout View
     '''
-    logout(request)
+    user_logout(request)
     return redirect('signup')
