@@ -17,6 +17,7 @@ E.g Principal A adds teacher B and assigns student C to teacher B
 >Principal can only add teacher he creates
 >Teacher can only add student created by principal or himself
 
+>Frontend Design not needed.Just backend.
 
 
 ***URLS AFTER COMPLETION***
