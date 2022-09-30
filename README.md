@@ -32,3 +32,5 @@ E.g Principal A adds teacher B and assigns student C to teacher B
 
  http://127.0.0.1:9000/logout - route for logout purposes
 
+
+** INCASE YOU FIND YOURSELF HERE AND YOU SEE SOMETHING TO CHANGE OR CORRECT ME.I'M VERY AVAILABLE **
