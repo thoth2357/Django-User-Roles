@@ -42,7 +42,9 @@ def PrincipalAddTeacher(request):
             new_teacher_details = TeacherDetails(user=new_user)
             new_teacher_details.save()
             print(Students, 'test', [student.id for student in Students])
-            new_teacher_details.Students.set([student.id for student in Students])
+            for student in Students:
+                new_teacher_details.Students.add(User.objects.get(id=student.id).id)
+            new_teacher_details.save()
             return HttpResponse("Success")
             # return HttpResponse("Error",e)
     return render(request, 'create-teachers.html', context)

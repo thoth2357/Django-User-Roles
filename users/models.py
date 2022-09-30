@@ -147,8 +147,11 @@ class TeacherDetails(models.Model):
     user = models.OneToOneField(Teacher, on_delete=models.CASCADE)
     Name = models.CharField(max_length=50,  help_text='Full Name', null=True)
     title = models.CharField(max_length=50, null=True, default=None)
-    Students = models.ManyToManyField(StudentDetails, blank=True, null=True)
+    Students = models.ManyToManyField(Student, blank=True, null=True, related_name="%(class)s_students")
     Bio = models.TextField(blank=True)
+    
+    def __str__(self) -> str:
+        return f"{self.user}-{self.Name}"
 
 
 
