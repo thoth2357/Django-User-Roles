@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     
     #external apps
     'django_extensions',
+    'widget_tweaks',
     
 ]
 
