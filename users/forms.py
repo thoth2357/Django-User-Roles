@@ -1,4 +1,3 @@
-from curses import savetty
 from django import forms
 from .models import User
 
